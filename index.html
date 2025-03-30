@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How the Internet Works</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>How the Internet Works</h1>
+        <nav>
+            <a href="#client-server">Client & server</a>
+            <a href="#journey">Web Request Journey</a>
+            <a href="#quiz">Interactive Quiz</a>
+        </nav>
+    </header>
+    <section id="client-server">
+        <h2>Understanding Client & Server</h2>
+        <p>The <b>Client </b> sends a request to the <i>server</i>, which processes the request and returns the appropriate respone.</p>
+        <img src="https://anvil.works/articles/img/client-vs-server/client-server-architecture.png" alt="Client Server Diagram" width="500">
+    </section>
+        <article id="journey">
+            <h2>The Journey of a web request</h2>
+            <ol>
+                <li>Client enters URL in the browser.</li>
+                <li>Browser send an HTTP request to the server.</li>
+                <li>DNS resolves the IP address.</li>
+                <li>Server processes the request and sends back the response.</li>
+                <li>Browser renders the web page.</li>
+            </ol>
+        </article>
+        <section>
+            <h2>Key Terms</h2>
+            <ul>
+                <li>HTTP</li>
+                <li>DNS</li>
+                <li>TCP/IP</li>
+            </ul>
+            <h3>Comparison Tables</h3>
+            <table>
+                <tr>
+                    <th>Function</th>
+                    <th>Client</th>
+                    <th>Server</th>
+                </tr>
+                <tr>
+                    <td>Request/Response</td>
+                    <td>Sends Request</td>
+                    <td>Processes and Responds</td>
+                </tr>
+                <tr>
+                    <td>Example</td>
+                    <td>Browser</td>
+                    <td>Web Server</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Static</th>
+                    <th>Dynamic</th>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Fixed HTML pages</td>
+                    <td>Generated in real-time</td>
+                </tr>
+                <tr>
+                    <td>Example</td>
+                    <td>Blog</td>
+                    <td>Social Media Platform</td>
+                </tr>
+            </table>
+        </section>
+        <aside>
+            <h3>Quick Facts</h3>
+            <p>TCP/IP protocol is the foundation of the internet.</p>
+            <p>Over <u>50%</u> of the web traffic today is served by <b>CDNs</b>.</p>
+        </aside>
+        <section id="media">
+            <h2>Visuals & Media</h2>
+            <!-- <iframe width="500" height="">
+                <source src = "how-internet-works\Client-side vs Server-side, Front-end vs Back-end_ Beginner Explanation of JavaScript on the Web.mp4" type="video/mp4">Your browser doesn't support
+            </iframe> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7GRKUaQ8Spk" title="Client-side vs Server-side, Front-end vs Back-end? Beginner Explanation of JavaScript on the Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+
+        <section id="map">
+            <h2>Major Internet data centers</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61391176.02447357!2d37.303694747467766!3d20.091449916987656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smajor%20internet%20data%20centers%20across%20world!5e0!3m2!1sen!2sin!4v1743319937905!5m2!1sen!2sin" width="560" height="315" style="border: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+        <section id="quiz">
+            <h2>Interactive Quiz</h2>
+            <form id="quiz">
+                <h3>What does a client do in web communication?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="correct" required>Sends a request to the server
+                </label> <br>
+                <label>
+                    <input type="radio" name="q1" value="wrong">Stores the website data.
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="wrong">Processes and returns the requested page.
+                </label><br><br>
+                <button type="submit">Submit</button>
+
+                <br><br>
+                <h3>What is a client-server model?</h3>
+                
+                <label>
+                    <input type="radio" name="q1" value="correct" required>clients request services
+                </label> <br>
+                <label>
+                    <input type="radio" name="q1" value="wrong">Stores the website data.
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="wrong">returns the requested page.
+                </label><br><br>
+                <button type="submit">Submit</button>
+                <br><br>
+
+                <h3>What are the advantages of a client-server model?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="wrong" required>Sends a request to the server
+                </label> <br>
+                <label>
+                    <input type="radio" name="q1" value="correct">Centralized management, improved security, and scalability. 
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="wrong">Processes and returns the requested page.
+                </label><br><br>
+                <button type="submit">Submit</button>
+
+            </form>
+            <!-- <form>
+                <p>What is a Client?</p>
+                <input type="radio" name="q1" value="browser">Browser<br>
+                <input type="radio" name="q1" value="server">Server <br>
+                <p>Feedback</p>
+                <input type="text" name="feedback" placeholder="Your thoughts..."> <br><br>
+            </form>
+        </section> -->
+    <footer>
+        <p>&copy; 2025 How the internet works. All rights reserved.</p>
+    </footer>
+</body>
+</html>

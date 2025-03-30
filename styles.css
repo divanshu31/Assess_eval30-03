@@ -1,0 +1,195 @@
+
+/* basic styling */
+body{
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+    /* background-color: #f4f4f4; */
+}
+/* header and nav */
+header{
+    background-color: #1d79d0;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+}
+nav a{
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* section styling */
+section, article, aside{
+    background-color: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* tables */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table, th, td{
+    border: 1px solid #ddd;
+    text-align: center;
+}
+form{
+    margin-top: 10px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+}
+/* button styling */
+button{
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+/* media */
+img, video{
+    display: block;
+    margin: 10px auto;
+}
+
+/* footer */
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5 rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* advanced css techniques  */
+nav a:hover{
+    text-decoration: underline;
+}
+input:focus{
+    border: 2px solid #4CAF50;
+}
+section::before{
+    font-size: 18px;
+}
+
+/* smooth css animations */
+a, button, img, video, input[type="text"]{
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover, button:hover {
+    color: #4CAF50;
+    transform: scale(1.05);
+}
+/* image and video zoom */
+img:hover, video:hover {
+    transform: scale(1.03);
+}
+/* responsive layout */
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+/* nav links */
+nav{
+    display: flex;
+    gap: 15px;
+}
+/* section layout */
+section, article, aside{
+    width: 80%;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+/* grid layout for table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+th, td{
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+form{
+    width: 80%;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+}
+button:hover{
+    background-color: #218838;
+    color: white;
+}
+label{
+    display: block;
+    margin: 0;
+}
+/* correct answer styling */
+input[value="correct"]:checked+label{
+    color: green;
+    font-weight: bold;
+}
+/* wrong answer styling */
+input[value="wrong"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+/* input[type="radio"]{
+    display: none;
+} */
+label:has(input[value="correct"]:checked){
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 8px;
+    border-radius: 5px;
+}
+label:has(input[value="wrong"]:checked){
+    background-color: rgba(253, 138, 138, 0.7);
+    border: 1px solid #f5c6cb;
+    padding: 8px;
+    border-radius: 5px;
+}
+button:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+form:has(input[type="radio"]:checked) button{
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+#quiz{
+    width: 90%;
+    /* max-width: 600px; */
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background:#fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
